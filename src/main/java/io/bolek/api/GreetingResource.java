@@ -9,16 +9,18 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
-@Path("/hello")
+@Path("/cars")
 public class GreetingResource {
 
     @Inject
     PollingService pollingService;
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Uni<String> hello() {
+    @Produces(MediaType.TEXT_HTML)
+    public Uni<String> hello() throws URISyntaxException, IOException, InterruptedException {
         return pollingService.poll();
     }
 }
