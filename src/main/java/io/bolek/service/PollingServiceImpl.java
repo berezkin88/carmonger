@@ -1,9 +1,9 @@
 package io.bolek.service;
 
 import io.smallrye.mutiny.Uni;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;

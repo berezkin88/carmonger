@@ -1,7 +1,9 @@
 package io.bolek.config;
 
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.Produces;
+import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.Default;
+import jakarta.enterprise.inject.Produces;
+
 import java.net.http.HttpClient;
 
 @Dependent
